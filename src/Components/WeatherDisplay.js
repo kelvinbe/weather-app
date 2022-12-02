@@ -26,6 +26,9 @@ function WeatherDisplay({weather}) {
         <Typography gutterBottom variant="h6" color="text.secondary">
           Current Condition: {weather.weather[0].description}
         </Typography>
+        <Typography gutterBottom variant="h6" color="text.secondary">
+          Precipitation: {Math.round(weather.main.feels_like)}<sup>%;</sup>
+        </Typography>
       </CardContent>
       <CardActions>
         <Button size="small">Share</Button>
