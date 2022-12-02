@@ -6,6 +6,8 @@ import Grid from '@mui/material/Grid';
 import { Button, TextField } from '@mui/material';
 import { getWeatherData } from '../api/weatherApi';
 import WeatherDisplay from './WeatherDisplay';
+import '../styles/search.css'
+
 
 
 function Search() {
@@ -23,7 +25,7 @@ function Search() {
     }
   
     return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1 }} className='search-layout'>
       <Grid container spacing={2}>
         <Grid item xs={12}>
       <TextField
@@ -38,7 +40,7 @@ function Search() {
           />
           </Grid>
           <Grid item xs={12}>
-            <Button variant="contained" onClick={search}>GO!</Button>
+            <Button className='button-style' variant="contained" onClick={search}>GO!</Button>
           </Grid>
 
 
