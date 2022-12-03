@@ -2,20 +2,17 @@ import React from 'react'
 import './App.css';
 import Search from './Components/Search';
 import Title from './Components/Title';
+import { Box } from '@mui/system';
 
 function App() {
 
  
 
   return (
-    <div container className='container'>
+    <Box className='container'>
       <Title />
       <Search />
-
-      
-
-  
-    </div>
+    </Box>
   );
 }
 
