@@ -1,7 +1,6 @@
 const initialState = {
   results: null,
   forecastData: null,
-  auth: null
 };
 
 const rootReducer = (state = initialState, action) => {
