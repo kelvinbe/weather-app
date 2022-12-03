@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
 
-import { red } from "@mui/material/colors";
 import "../styles/forecast.css";
 import {useSelector, useDispatch} from 'react-redux'
 import { getForecastData} from "../api/weatherApi";
 import { useNavigate } from "react-router-dom";
-import { Grid, Card, CardMedia, CardContent, Typography, Button, Box} from '@mui/material'
+import { Grid, Card, CardMedia, CardContent, Typography, Button} from '@mui/material'
 
 
 
