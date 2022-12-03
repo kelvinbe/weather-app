@@ -7,7 +7,7 @@
 <br />
 <p align="center">
     <img src="https://img.shields.io/badge/React_(17.0.2)-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="reactjs" />
-    <img src="https://img.shields.io/badge/Redux_(4.1.2)-593D88?style=for-the-badge&logo=redux&logoColor=white" alt="redux" />
+    <img src="https://img.shields.io/badge/Redux_(4.1.2)-593D88?style=for-the-badge&logo=react-redux&logoColor=white" alt="redux" />
     <img src="https://img.shields.io/badge/Chakra%20UI-3bc7bd?style=for-the-badge&logo=chakraui&logoColor=white" alt="chakra-ui"/>
     <img src="https://img.shields.io/badge/Rest_API-02303A?style=for-the-badge&logo=react-router&logoColor=white" alt="restAPI"/>
     <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="css3"/>     
@@ -17,12 +17,11 @@
 
      
     
-  <h3 align="center"><a href="https://mohit-weather-app.vercel.app/"><strong>Want to see live preview »</strong></a></h3>
+  <h3 align="center"><a href="https://mohit-weather-app.vercel.app/"><strong>Live preview »</strong></a></h3>
    
     
   <p align="center"> 
     <br />&#10023;
-    <a href="#Demo">View Demo</a>   &#10023;  
     <a href="https://github.com/m-sehrawat/Weather-App/issues">Report Bug</a>    &#10023;
     <a href="#Getting-Started">Getting Started</a> &#10023; <a href="#Install">Installing</a> &#10023;    
     <a href="#Contact">Author</a> &#10023;
@@ -67,7 +66,7 @@ To use the app, type a name of the city and click on search/press Enter or else 
 
 ## Getting Started
 
-This project was built using React v 17.0.2, Redux v 4.1.2, Chakra UI, CSS and Rest API. It is a web application and for running on your local environment you should follow these guidelines.
+This project was built using React v 18.2.0, React-Redux v 8.0.5, Material UI, and Open Weather API. It is a web application and for running on your local environment you should follow these guidelines.
 
 
 ### Prerequisites
