@@ -45,7 +45,7 @@ function Search() {
       });
 
       console.log("error", error);
-      setIsLoading(false)
+      setIsLoading(false);
     }
   };
 
@@ -56,7 +56,7 @@ function Search() {
 
   return (
     <Box sx={{ flexGrow: 1 }} className="search-layout">
-      <Grid container spacing={2} style={{display: 'contents'}}>
+      <Grid container spacing={2} style={{ display: "contents" }}>
         <Grid item xs={12}>
           <TextField
             label="Search City"
@@ -75,12 +75,18 @@ function Search() {
           </Button>
         </Grid>
 
-        {loading ? <div style={{marginTop: 20}}><CircularProgress /> </div>: weather.main && (
-          <WeatherDisplay
-            className="layout"
-            weather={weather}
-            forecast={forecast}
-          />
+        {loading ? (
+          <div style={{ marginTop: 20 }}>
+            <CircularProgress />{" "}
+          </div>
+        ) : (
+          weather.main && (
+            <WeatherDisplay
+              className="layout"
+              weather={weather}
+              forecast={forecast}
+            />
+          )
         )}
       </Grid>
     </Box>
