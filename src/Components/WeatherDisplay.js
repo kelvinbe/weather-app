@@ -48,7 +48,7 @@ function WeatherDisplay({weather, forecast}) {
       <p>City: </p>
       <p>Temperature: </p>
       <p>Humidity: </p>
-      <p>Current Condition: </p> 
+      <p>Condition: </p> 
       <p>Precipitation: </p>
         </Typography>
         <Typography gutterBottom variant="h5" style={{backgroundColor: '#90b3e0', borderRadius: '30px'}}  component="div">
