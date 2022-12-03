@@ -1,35 +1,23 @@
 import React, { useEffect, useState } from "react";
 
 import "../styles/forecast.css";
-import {useSelector, useDispatch} from 'react-redux'
-import { getForecastData} from "../api/weatherApi";
+import {useSelector} from 'react-redux'
 import { useNavigate } from "react-router-dom";
 import { Grid, Card, CardMedia, CardContent, Typography, Button} from '@mui/material'
 
 
-
-
-
-
-
-
 const ForecastDisplay = () => {
   const [isHover, setIsHover] = useState(false)
-  const [isGameId, setGameId] = useState(null)
   const [index, setIndex] = useState(1)
   const navigate = useNavigate()
 
 
-  const dispatch = useDispatch()
   const results = useSelector((state) => state.forecastData )
   const stop = 7;
 
 
   const handleHover = (id) => {
     setIsHover(true)
-    setGameId(id)
-
-
   }
 
   const handleHoverOut = () => {
@@ -38,13 +26,8 @@ const ForecastDisplay = () => {
 
 }
 
-
-
-
 useEffect(() => {
   let interval = null
-
-
   function increment() {
     setIndex(index + 1);;
   
@@ -78,7 +61,6 @@ const toggleForcast = () => {
 
   console.log(results);
 
-    const days = ['Mon','Tue','Wen','Thur','Fri','Sat','',]
  
 
   return (
@@ -140,7 +122,6 @@ const toggleForcast = () => {
       </>
 
     </div>
-    {/* {!isLoading && <FooterContainer />} */}
     </div>
   );
 }
