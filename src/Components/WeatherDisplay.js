@@ -1,40 +1,51 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Grid, Card, CardActions, CardMedia, CardContent, Typography, Button} from '@mui/material'
 import '../styles/weather.css'
+import ForecastDisplay from './ForecastDisplay'
 
 
-function WeatherDisplay({weather}) {
+function WeatherDisplay({weather, forecast}) {
+
+  const [viewForcast, setViewForcast] = useState(false)
+
+  console.log('forecastWea', forecast)
+
+  const toggleForcast = () => {
+
+    setViewForcast(!viewForcast)
+
+    
+  }
+  console.log('view', viewForcast)
+
   return (
     <Grid container className='layout'>
-        <Card sx={{ maxWidth: 345 }}>
+        <Button size="small" variant="outlined" style={{marginBottom: 10}} onClick={toggleForcast}>Weekly Forecast</Button>
+       { viewForcast ? <ForecastDisplay weather={weather} forecast={forecast} setViewForcast={setViewForcast} viewForcast /> : 
+       <Card sx={{ maxWidth: 345 }} style={{borderRadius: '20px', backgroundColor: '#cae2e6'}}>
       <CardMedia
         component="img"
         alt={weather.weather[0].description}
         height="140"
         image={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`}
       />
-      <CardContent>
+      <CardContent style={{display: 'flex'}}>
       <Typography gutterBottom variant="h5" component="div">
-          City: {weather.name}
+      <p>City: </p>
+      <p>Temperature: </p>
+      <p>Humidity: </p>
+      <p>Current Condition: </p> 
+      <p>Precipitation: </p>
         </Typography>
-        <Typography gutterBottom variant="h5"color="text.secondary">
-          Temperature: {Math.round(weather.main.temp)} <sup>&deg;C</sup>
-        </Typography>
-        <Typography variant="h5" color="text.secondary">
-            Humidity: {weather.main.humidity}
-        </Typography>
-        <Typography gutterBottom variant="h6" color="text.secondary">
-          Current Condition: {weather.weather[0].description}
-        </Typography>
-        <Typography gutterBottom variant="h6" color="text.secondary">
-          Precipitation: {Math.round(weather.main.feels_like)}<sup>%;</sup>
+        <Typography gutterBottom variant="h5" style={{backgroundColor: '#90b3e0', borderRadius: '30px'}}  component="div">
+            <p>{weather.name}</p>
+            <p>{Math.round(weather.main.temp)} <sup>&deg;C</sup></p>
+            <p>{weather.main.humidity}</p>
+            <p>{weather.weather[0].description}</p>
+            <p>{Math.round(weather.main.feels_like)}<sup>%</sup></p>
         </Typography>
       </CardContent>
-      <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions>
-    </Card>
+    </Card>}
     </Grid>
   )
 }
