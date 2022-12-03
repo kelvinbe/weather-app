@@ -8,7 +8,6 @@ import { Grid, Card, CardMedia, CardContent, Typography, Button} from '@mui/mate
 
 const ForecastDisplay = () => {
   const [isHover, setIsHover] = useState(false)
-  const [isGameId, setGameId] = useState(null)
   const [index, setIndex] = useState(1)
   const navigate = useNavigate()
 
@@ -19,9 +18,6 @@ const ForecastDisplay = () => {
 
   const handleHover = (id) => {
     setIsHover(true)
-    setGameId(id)
-
-
   }
 
   const handleHoverOut = () => {
@@ -65,7 +61,6 @@ const toggleForcast = () => {
 
   console.log(results);
 
-    const days = ['Mon','Tue','Wen','Thur','Fri','Sat','Sun',]
  
 
   return (

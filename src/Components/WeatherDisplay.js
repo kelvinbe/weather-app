@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Grid, CardMedia, CardContent, Typography, Button} from '@mui/material'
 import '../styles/weather.css'
 import { useNavigate } from "react-router-dom";
@@ -23,7 +23,6 @@ const Boot = styled("div")(({ theme }) => ({
 
 function WeatherDisplay({weather, forecast}) {
 
-  const [viewForcast, setViewForcast] = useState(false)
   const navigate = useNavigate()
 
   console.log('forecastWea', forecast)
@@ -33,7 +32,6 @@ function WeatherDisplay({weather, forecast}) {
 
     navigate('/forecast')
   }
-  console.log('view', viewForcast)
 
   return (
     <Grid container className='layout'>
