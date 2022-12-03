@@ -34,7 +34,14 @@ This project is built using React and Material UI using [Open weather map](https
 is displayed using React. Components are the building blocks of the UI where we have four primary components being used, which are 
 ```Search, ForecastDisplay, WeatherDisplay and Title```
 
-###Search
+##Search
+This is a react component that displays a textfield and allows the user to input a city or country so as to query the api and return that data.
+##ForecastDisplay
+This component displays weekly data from the weather api for 5 days to come which is what the free-tier package of the OpenWeatherApi provides.
+##WeatherDisplay
+This componet displays the current weather of the city or country that was queried from the search bar
+##Title
+This is a simple component displaying the title of the project 
 
 It have some cool features like save the weather data in redux-store and session-storage to reduce the dependency of network requests, search weather details according to the city, detect your current location for displaying weather data, shows a map of that location, sync data to get the latest updated details of the current weather, toast notification for every action, pop up modal to display extra details of seven-day forecast weather, cool zoom-in zoom-out animations and responsive for every screen size.
 
