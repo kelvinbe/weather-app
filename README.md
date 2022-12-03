@@ -82,7 +82,7 @@ Using SSH
 + Open terminal on your workspace with
 
 ```
-cd /home/workspace/weather-App
+cd /home/workspace/weather-app
 ```
 
 
