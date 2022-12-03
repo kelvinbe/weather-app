@@ -84,7 +84,7 @@ Using SSH
 + Open terminal on your workspace with
 
 ```
-cd /home/workspace/Weather-App
+cd /home/workspace/weather-App
 ```
 
 
@@ -118,10 +118,6 @@ npm install
 
 
 To run the application, run the following command:
-
-```
-cd into project using cd weather-app
-```
 
 ```
 npm start
