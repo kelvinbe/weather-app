@@ -2,7 +2,23 @@ import React, { useState } from 'react'
 import { Grid, Card, CardMedia, CardContent, Typography, Button} from '@mui/material'
 import '../styles/weather.css'
 import { useNavigate } from "react-router-dom";
+import { styled } from "@mui/material/styles";
 
+
+
+const Boot = styled("div")(({ theme }) => ({
+  padding: theme.spacing(1),
+  [theme.breakpoints.down("sm")]: {
+    width: '270px'
+  },
+
+  [theme.breakpoints.up("md")]: {
+    width: '500px',
+  },
+  [theme.breakpoints.up("lg")]: {
+    width: '728px',
+  },
+}));
 
 
 function WeatherDisplay({weather, forecast}) {
@@ -11,6 +27,7 @@ function WeatherDisplay({weather, forecast}) {
   const navigate = useNavigate()
 
   console.log('forecastWea', forecast)
+
 
   const toggleForcast = () => {
 
@@ -21,7 +38,7 @@ function WeatherDisplay({weather, forecast}) {
   return (
     <Grid container className='layout'>
         <Button size="small" variant="outlined" style={{marginBottom: 10}} onClick={toggleForcast}>Weekly Forecast</Button>
-       <Card sx={{ maxWidth: 345 }} style={{borderRadius: '20px', backgroundColor: '#cae2e6'}}>
+       <Boot sx={{ maxWidth: 345 }} style={{borderRadius: '20px', backgroundColor: '#cae2e6'}}>
       <CardMedia
         component="img"
         alt={weather.weather[0].description}
@@ -44,7 +61,7 @@ function WeatherDisplay({weather, forecast}) {
             <p>{Math.round(weather.main.feels_like)}<sup>%</sup></p>
         </Typography>
       </CardContent>
-    </Card>}
+    </Boot>
     </Grid>
   )
 }

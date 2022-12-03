@@ -2,24 +2,35 @@
 
 html, body, #root {
   font: 0.9rem sans-serif;
-  background: #0a1f44;
-  color: #1e2432;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
   height: 100%;
   margin: 0;
 }
-.container {
-  background: linear-gradient( rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.418) ), url('https://res.cloudinary.com/dtpgi0zck/image/upload/s--SsFGdDoP--/c_fill,h_580,w_860/v1/EducationHub/photos/ocean-waves.jpg');
-  background-size: cover;
-  background-position: center;
+
+
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
 }
 
 .container {
-  height: 100%;
-  /* height: 100vh; */
+
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   flex-direction: column;
 }
+
 
