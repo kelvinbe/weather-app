@@ -2,26 +2,26 @@ import React, { useState } from 'react'
 import { Grid, Card, CardActions, CardMedia, CardContent, Typography, Button} from '@mui/material'
 import '../styles/weather.css'
 import ForecastDisplay from './ForecastDisplay'
+import { useNavigate } from "react-router-dom";
+
 
 
 function WeatherDisplay({weather, forecast}) {
 
   const [viewForcast, setViewForcast] = useState(false)
+  const navigate = useNavigate()
 
   console.log('forecastWea', forecast)
 
   const toggleForcast = () => {
 
-    setViewForcast(!viewForcast)
-
-    
+    navigate('/forecast')
   }
   console.log('view', viewForcast)
 
   return (
     <Grid container className='layout'>
         <Button size="small" variant="outlined" style={{marginBottom: 10}} onClick={toggleForcast}>Weekly Forecast</Button>
-       { viewForcast ? <ForecastDisplay weather={weather} forecast={forecast} setViewForcast={setViewForcast} viewForcast /> : 
        <Card sx={{ maxWidth: 345 }} style={{borderRadius: '20px', backgroundColor: '#cae2e6'}}>
       <CardMedia
         component="img"
