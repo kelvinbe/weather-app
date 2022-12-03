@@ -37,7 +37,7 @@ It have some cool features like save the weather data in redux-store and session
 To use the app, type a name of the city and click on search/press Enter or else click on the Your location weather button, every time you click on the button first it will check if the data is available in the session storage or not, and if not then it will send a network request else it will take the data from session-storage. 
 
 
-## 🚀 Features
+## 🚀 Specifications and Features 
 - Saving the weather data in redux-store and session-storage to reduce the dependency of network requests
 - Search weather details according to the city
 - Detect your current location for displaying weather data
