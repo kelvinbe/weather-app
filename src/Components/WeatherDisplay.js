@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
-import { Grid, Card, CardActions, CardMedia, CardContent, Typography, Button} from '@mui/material'
+import { Grid, Card, CardMedia, CardContent, Typography, Button} from '@mui/material'
 import '../styles/weather.css'
-import ForecastDisplay from './ForecastDisplay'
 import { useNavigate } from "react-router-dom";
 
 
