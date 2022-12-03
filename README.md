@@ -75,14 +75,10 @@ This project was built using React v 18.2.0, React-Redux v 8.0.5, Material UI, a
 
 ### Setup
 
-
-The project repository can be found in [GitHub link](https://github.com/m-sehrawat/Weather-App) or just clone the project using this command. 
-
-
 ```
-Using HTTPS
+Using SSH
 
-# git clone  https://github.com/m-sehrawat/Weather-App.git
+# git clone  
 ```
 
 + Open terminal on your workspace with
