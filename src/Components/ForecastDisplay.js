@@ -73,13 +73,13 @@ const toggleForcast = () => {
                 /> 
                 <CardContent style={{display: 'flex'}}>
       <Typography gutterBottom variant="h5" component="div">
-      <p>Wind: </p>
+      <p>Day: </p>
       <p>Temperature: </p>
       <p>Humidity: </p>
       <p>Condition: </p> 
       <p>Precipitation: </p>
         </Typography>
-        <Typography gutterBottom variant="h5" style={{backgroundColor: '#90b3e0', borderRadius: '30px', textAlign: 'center', color: 'antiquewhite', lineHeight: 1}}  component="div">
+        <Typography gutterBottom variant="h5" style={{backgroundColor: '#90b3e0', borderRadius: '30px', textAlign: 'center', color: 'antiquewhite', lineHeight: 1, padding: 17}}  component="div">
             <p>{weather.dt_txt.slice(0, 10)}</p>
             <p>{Math.round(weather.main.temp)} <sup>&deg;C</sup></p>
             <p>{weather.main.humidity}</p>
