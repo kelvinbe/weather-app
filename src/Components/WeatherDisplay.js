@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Grid, Card, CardMedia, CardContent, Typography, Button} from '@mui/material'
+import { Grid, CardMedia, CardContent, Typography, Button} from '@mui/material'
 import '../styles/weather.css'
 import { useNavigate } from "react-router-dom";
 import { styled } from "@mui/material/styles";
