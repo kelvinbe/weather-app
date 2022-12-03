@@ -14,7 +14,6 @@ import { Grid, Card, CardMedia, CardContent, Typography, Button} from '@mui/mate
 
 
 const ForecastDisplay = () => {
-  const [isLoading, setIsLoading] = useState(false)
   const [isHover, setIsHover] = useState(false)
   const [isGameId, setGameId] = useState(null)
   const [index, setIndex] = useState(1)
@@ -74,24 +73,8 @@ const toggleForcast = () => {
 }
 
 
-  useEffect(() => {
-    
-    
-    const FetchData = async () => {
-      try {
-        // const resp = await getForecastData(results?.name)
-        // dispatch({type: 'GET_FORECAST', data: resp})
-      } catch (err) {
-        setIsLoading(false)
-        console.error(err);
-      }
-    }
-    FetchData() 
-  
 
-  }, [dispatch]);
 
-  if (!results) return null;
 
   console.log(results);
 
@@ -141,7 +124,7 @@ const toggleForcast = () => {
       <p>Current Condition: </p> 
       <p>Precipitation: </p>
         </Typography>
-        <Typography gutterBottom variant="h5" style={{backgroundColor: '#90b3e0', borderRadius: '30px'}}  component="div">
+        <Typography gutterBottom variant="h5" style={{backgroundColor: '#90b3e0', borderRadius: '30px', textAlign: 'center'}}  component="div">
             <p>{weather.wind.deg} <sup>&deg;</sup></p>
             <p>{Math.round(weather.main.temp)} <sup>&deg;C</sup></p>
             <p>{weather.main.humidity}</p>
