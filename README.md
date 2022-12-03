@@ -50,13 +50,19 @@ provided being global we can access the data from the api from anywhere in the a
 
 
 ## 🚀 Specifications and Features 
-STORY-1 - User can input a city and querying the weather api 
-STORY-2 - A button with title 'Go' calls the open weather api and stores the data in the react-redux store
-STORY-3 - Weather conditions for a give location for the next five days are displayed. 5 days because the free-tire on the api only allows 5 days
-STORY-4 - Responsiveness is added allowing for Mobile and Desktop screens to use the app.
-STORY-5 - Image displaying the current condition of the location is displayed from the open weather api allowing better visualization.
-STORY-6 - Added chnaging color pattern in the background to beautify UI and added progress spinner so as to give response to user while data is being
-          fethed from the api. Also added the notification library to assist with displaying error meassage if invalid city is entered in input.
+## STORY-1 
+```User can input a city and querying the weather api``` 
+## STORY-2
+```A button with title 'Go' calls the open weather api and stores the data in the react-redux store```
+### STORY-3 
+```Weather conditions for a give location for the next five days are displayed. 5 days because the free-tire on the api only allows 5 days```
+## STORY-4 
+```Responsiveness is added allowing for Mobile and Desktop screens to use the app.```
+## STORY-5 
+```Image displaying the current condition of the location is displayed from the open weather api allowing better visualization.```
+## STORY-6 
+```Added chaging color pattern in the background to beautify UI and added progress spinner so as to give response to user while data is being```
+   ```fethed from the api. Also added the notification library to assist with displaying error meassage if invalid city is entered in input.```
 
 <br/>
 
