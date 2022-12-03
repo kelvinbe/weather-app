@@ -1,6 +1,6 @@
 <h1 align="center">Weather App</h1> 
 
-![weather app cover](https://user-images.githubusercontent.com/91532881/166434542-76727ccb-0c98-4646-84fb-58e86d7ec3ff.png)
+![weather app cover](https://github.com/kelvinbe/weather-app/blob/main/src/assets/img1.png)
 
 <h2 align="center">Web application to show the current and upcoming week weather forecast.</h2>    
 
@@ -62,10 +62,6 @@ To use the app, type a name of the city and click on search/press Enter or else 
 ![weatherapp2](https://user-images.githubusercontent.com/91532881/166334796-48e0faa6-3e3c-46e5-9cd1-857da895379d.png)
 
 <br />
-
-## Demo
-
-https://user-images.githubusercontent.com/91532881/166426542-b271be2e-e7d9-4b3c-bfe7-5e9e51e26be4.mp4
 
 
 <br/>
