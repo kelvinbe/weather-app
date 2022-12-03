@@ -35,19 +35,20 @@ is displayed using React. Components are the building blocks of the UI where we 
 ```Search, ForecastDisplay, WeatherDisplay and Title```
 
 
-## Search
+### Search
 This is a react component that displays a textfield and allows the user to input a city or country so as to query the api and return that data.
-## ForecastDisplay
+### ForecastDisplay
 This component displays weekly data from the weather api for 5 days to come which is what the free-tier package of the OpenWeatherApi provides.
-## WeatherDisplay
+### WeatherDisplay
 This componet displays the current weather of the city or country that was queried from the search bar
-## Title
+### Title
 This is a simple component displaying the title of the project 
-## React-Redux
+### React-Redux
 React Redux is used to manage the state of the application. We do this by saving the data coming from the api in the store provided by react-redux.
 The benefit of this is the ability to reduce complexity that comes by drilling props into diffrent components so as to access them. With the store 
 provided being global we can access the data from the api from anywhere in the application allowing for scaling and easy redabilty.
-
+### API
+This is a javascript file that holds all the api calls to the open weather api
 
 ## 🚀 Specifications and Features 
 #### STORY-1 
