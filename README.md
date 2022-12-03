@@ -55,11 +55,9 @@ To use the app, type a name of the city and click on search/press Enter or else 
 
 
 
-![Mobile responsive](https://user-images.githubusercontent.com/91532881/166426445-3aeee29c-bca7-4d95-a082-70269bb192fd.png)
 
-![weatherapp](https://user-images.githubusercontent.com/91532881/166334689-ac7807e2-6d40-4a8f-b232-c53955f6ea03.png)
+![weatherapp](https://github.com/kelvinbe/weather-app/blob/main/src/assets/img.png)
 
-![weatherapp2](https://user-images.githubusercontent.com/91532881/166334796-48e0faa6-3e3c-46e5-9cd1-857da895379d.png)
 
 <br />
 
