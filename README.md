@@ -42,8 +42,10 @@ This component displays weekly data from the weather api for 5 days to come whic
 This componet displays the current weather of the city or country that was queried from the search bar
 ##Title
 This is a simple component displaying the title of the project 
-
-It have some cool features like save the weather data in redux-store and session-storage to reduce the dependency of network requests, search weather details according to the city, detect your current location for displaying weather data, shows a map of that location, sync data to get the latest updated details of the current weather, toast notification for every action, pop up modal to display extra details of seven-day forecast weather, cool zoom-in zoom-out animations and responsive for every screen size.
+##React-Redux
+React Redux is used to manage the state of the application. We do this by saving the data coming from the api in the store provided by react-redux.
+The benefit of this is the ability to reduce complexity that comes by drilling props into diffrent components so as to access them. With the store 
+provided being global we can access the data from the api from anywhere in the application allowing for scaling and easy redabilty as well.
 
 To use the app, type a name of the city and click on search/press Enter or else click on the Your location weather button, every time you click on the button first it will check if the data is available in the session storage or not, and if not then it will send a network request else it will take the data from session-storage. 
 
