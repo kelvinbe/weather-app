@@ -34,6 +34,7 @@ function WeatherDisplay({weather, forecast}) {
   }
 
   return (
+    <div>
     <Grid container className='layout'>
         <Button size="small" variant="outlined" style={{marginBottom: 10}} onClick={toggleForcast}>Weekly Forecast</Button>
        <Boot sx={{ maxWidth: 345 }} style={{borderRadius: '20px', backgroundColor: '#cae2e6'}}>
@@ -51,7 +52,7 @@ function WeatherDisplay({weather, forecast}) {
       <p>Condition: </p> 
       <p>Precipitation: </p>
         </Typography>
-        <Typography gutterBottom variant="h5" style={{backgroundColor: '#90b3e0', borderRadius: '30px'}}  component="div">
+        <Typography gutterBottom variant="h5" style={{backgroundColor: '#90b3e0', borderRadius: '30px', color: 'antiquewhite', lineHeight: 1}}  component="div">
             <p>{weather.name}</p>
             <p>{Math.round(weather.main.temp)} <sup>&deg;C</sup></p>
             <p>{weather.main.humidity}</p>
@@ -61,6 +62,7 @@ function WeatherDisplay({weather, forecast}) {
       </CardContent>
     </Boot>
     </Grid>
+    </div>
   )
 }
 

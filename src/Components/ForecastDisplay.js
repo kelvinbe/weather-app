@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 import "../styles/forecast.css";
 import {useSelector} from 'react-redux'
@@ -8,12 +8,10 @@ import { Grid, Card, CardMedia, CardContent, Typography, Button} from '@mui/mate
 
 const ForecastDisplay = () => {
   const [isHover, setIsHover] = useState(false)
-  const [index, setIndex] = useState(1)
   const navigate = useNavigate()
-
+  console.log('hover', isHover)
 
   const results = useSelector((state) => state.forecastData )
-  const stop = 7;
 
 
   const handleHover = (id) => {
@@ -26,28 +24,7 @@ const ForecastDisplay = () => {
 
 }
 
-useEffect(() => {
-  let interval = null
-  function increment() {
-    setIndex(index + 1);;
-  
-    if (index === stop) {
-      setIndex(1)
-    }
-  
-  }
 
-
-  if(isHover){
-   interval = setInterval(increment, 5000);
-  }else if(!isHover){
-    setIndex(1)
-    clearInterval(interval)
-  }
-
-  return () => clearInterval(interval)
-
-}, [isHover, index])
 
 
 const toggleForcast = () => {
@@ -56,12 +33,8 @@ const toggleForcast = () => {
 }
 
 
-
-
-
   console.log(results);
 
- 
 
   return (
     <div>
@@ -90,7 +63,7 @@ const toggleForcast = () => {
         </Grid>
         {results?.map((weather, key) => {
           return (
-            <Grid item style={{ padding: 10 }} key={weather.dt} className="flex-wrapper">
+            <Grid item style={{ padding: 10, marginBottom: 20 }} key={weather.dt} className="flex-wrapper">
               <Card style={{borderRadius: 20}} sx={{ maxWidth: 345 }} key={weather.dt} className="tag" onMouseOver={() => handleHover(weather.id)} onMouseOut={handleHoverOut}>
               <CardMedia
                   component="img"
@@ -106,8 +79,8 @@ const toggleForcast = () => {
       <p>Condition: </p> 
       <p>Precipitation: </p>
         </Typography>
-        <Typography gutterBottom variant="h5" style={{backgroundColor: '#90b3e0', borderRadius: '30px', textAlign: 'center'}}  component="div">
-            <p>{weather.wind.deg} <sup>&deg;</sup></p>
+        <Typography gutterBottom variant="h5" style={{backgroundColor: '#90b3e0', borderRadius: '30px', textAlign: 'center', color: 'antiquewhite', lineHeight: 1}}  component="div">
+            <p>{weather.dt_txt.slice(0, 10)}</p>
             <p>{Math.round(weather.main.temp)} <sup>&deg;C</sup></p>
             <p>{weather.main.humidity}</p>
             <p>{weather.weather[0].description}</p>

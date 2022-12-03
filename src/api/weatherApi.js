@@ -38,12 +38,14 @@ export const getForecastData = async (location) => {
     let forcastData = await axios.get(ForecastAPI);
 
 
-    console.log('forecastSliced', forcastData.data.list.slice(33))
+    console.log('forecastSliced', forcastData)
 
-    const forecastSlicedData =  forcastData.data.list.slice(33)
+    const forecastDate = forcastData.data.list.filter(weather => weather.dt_txt.includes('09:00:00'))
+
+    console.log('forecastDate', forecastDate)
 
 
-    return forecastSlicedData
+    return forecastDate
 
 
 
