@@ -56,7 +56,7 @@ This is a javascript file that holds all the api calls to the open weather api
 #### STORY-2
 ```A button with title 'Go' calls the open weather api and stores the data in the react-redux store```
 #### STORY-3 
-```Weather conditions for a give location for the next five days are displayed. 5 days because the free-tire on the api only allows 5 days```
+```Weather conditions for a given location for the next five days are displayed. I used the 5 days because the free-tire on the open weather api only allows 5 days```
 #### STORY-4 
 ```Responsiveness is added allowing for Mobile and Desktop screens to use the app.```
 #### STORY-5 
