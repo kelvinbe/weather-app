@@ -78,7 +78,7 @@ This project was built using React v 18.2.0, React-Redux v 8.0.5, Material UI, a
 ```
 Using SSH
 
-# git clone  
+# git clone  git@github.com:kelvinbe/weather-app.git
 ```
 
 + Open terminal on your workspace with
@@ -120,30 +120,11 @@ npm install
 To run the application, run the following command:
 
 ```
-npm run dev
+cd into project using cd weather-app
+```
+
+```
+npm start
 ```
 
 
-### Tools used on this project
-
-- Visual Studio Code
-- Vite Js React Template
-
-<br/>
-
-
-
-## Contact
-
-If you want to contact me, you can reach me through below handles.
-
-[![linkedin](https://img.shields.io/badge/Mohit_Sehrawat-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/m-sehrawat/)
-[![Twitter](https://img.shields.io/badge/Mohit_Sehrawat-20232A?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/m-sehrawat/)
-
-© 2022 Mohit Sehrawat
-
-
-
-## Show your support
-
-Give a ⭐️ if you like this project!
