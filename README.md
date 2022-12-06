@@ -96,7 +96,7 @@ Using SSH
 # git clone  git@github.com:kelvinbe/weather-app.git
 ```
 
-+ Open terminal on your workspace with
++ Open terminal and navigate into project
 
 ```
 cd /home/workspace/weather-app
