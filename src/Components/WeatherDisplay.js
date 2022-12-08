@@ -75,6 +75,7 @@ function WeatherDisplay({ weather, forecast }) {
                 color: "antiquewhite",
                 lineHeight: 1,
                 fontSize: 24,
+                width: 158
               }}
               component="div"
             >
