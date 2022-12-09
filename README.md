@@ -16,7 +16,7 @@
 
      
     
-  <h3 align="center"><a href="https://mohit-weather-app.vercel.app/"><strong>Live preview »</strong></a></h3>
+  <h3 align="center"><a href="https://sky-peer-weather-app.netlify.app/"><strong>Live preview »</strong></a></h3>
    
     
   <p align="center"> 
