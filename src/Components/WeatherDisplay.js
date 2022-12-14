@@ -75,7 +75,7 @@ function WeatherDisplay({ weather, forecast }) {
                 color: "antiquewhite",
                 lineHeight: 1,
                 fontSize: 24,
-                width: 158
+                width: 126
               }}
               component="div"
             >
@@ -84,7 +84,7 @@ function WeatherDisplay({ weather, forecast }) {
                 {Math.round(weather.main.temp)} <sup>&deg;C</sup>
               </p>
               <p>{weather.main.humidity}</p>
-              <p style={{whiteSpace: 'nowrap'}}>{weather.weather[0].description}</p>
+              <p style={{whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis'}}>{weather.weather[0].description}</p>
               <p>
                 {Math.round(weather.main.feels_like)}
                 <sup>%</sup>

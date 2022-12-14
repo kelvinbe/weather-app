@@ -106,6 +106,7 @@ const ForecastDisplay = () => {
                           color: "antiquewhite",
                           lineHeight: 1,
                           padding: 17,
+                  
                         }}
                         component="div"
                       >
@@ -114,7 +115,7 @@ const ForecastDisplay = () => {
                           {Math.round(weather.main.temp)} <sup>&deg;C</sup>
                         </p>
                         <p>{weather.main.humidity}</p>
-                        <p style={{whiteSpace: 'nowrap'}}>{weather.weather[0].description}</p>
+                        <p style={{whiteSpace: 'nowrap',overflow: 'hidden', textOverflow: 'ellipsis'}}>{weather.weather[0].description}</p>
                         <p>
                           {Math.round(weather.main.feels_like)}
                           <sup>%</sup>
