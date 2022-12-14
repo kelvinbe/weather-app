@@ -84,7 +84,7 @@ function WeatherDisplay({ weather, forecast }) {
                 {Math.round(weather.main.temp)} <sup>&deg;C</sup>
               </p>
               <p>{weather.main.humidity}</p>
-              <p>{weather.weather[0].description}</p>
+              <p style={{whiteSpace: 'nowrap'}}>{weather.weather[0].description}</p>
               <p>
                 {Math.round(weather.main.feels_like)}
                 <sup>%</sup>

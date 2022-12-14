@@ -109,12 +109,12 @@ const ForecastDisplay = () => {
                         }}
                         component="div"
                       >
-                        <p>{weather.dt_txt.slice(0, 10)}</p>
+                        <p style={{whiteSpace: 'nowrap'}}>{weather.dt_txt.slice(0, 10)}</p>
                         <p>
                           {Math.round(weather.main.temp)} <sup>&deg;C</sup>
                         </p>
                         <p>{weather.main.humidity}</p>
-                        <p>{weather.weather[0].description}</p>
+                        <p style={{whiteSpace: 'nowrap'}}>{weather.weather[0].description}</p>
                         <p>
                           {Math.round(weather.main.feels_like)}
                           <sup>%</sup>
