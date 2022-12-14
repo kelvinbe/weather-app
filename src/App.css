@@ -25,12 +25,13 @@ html, body, #root {
 
 .container {
 
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 

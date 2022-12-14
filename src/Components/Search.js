@@ -70,7 +70,11 @@ function Search() {
           />
         </Grid>
         <Grid item xs={12}>
-          <Button className="button-style" variant="contained" onClick={search}>
+          <Button className="button-style" variant="contained" onClick={search}
+          style={{ marginBottom: 2 }}
+          
+          
+          >
             GO!
           </Button>
         </Grid>
